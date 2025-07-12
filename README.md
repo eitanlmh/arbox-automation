@@ -55,7 +55,9 @@ docker exec -it arbox-automation-vault-1 sh
 vault login root
 ```
 # Add Arbox credentials securely
+```
 vault kv put secret/arbox email="you@example.com" password="your_password"
+```
 You can modify secrets/policy.hcl and apply policies as needed.
 
 4. Build and Run the Project
