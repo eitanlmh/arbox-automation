@@ -1,0 +1,23 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# Environment and secrets
+.env
+secrets/.vault-token
+
+# macOS
+.DS_Store
+
+# Docker
+*.tar
+*.pid
+
+# VSCode or IDEs
+.vscode/
+.idea/
+*.swp
