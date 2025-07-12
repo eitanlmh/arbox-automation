@@ -35,7 +35,7 @@ arbox-automation/
 ├── .env                      # Non-secret config
 └── README.md                 # You are here
 ```
-🛠️ Setup Instructions
+# 🛠️ Setup Instructions
 1. Prerequisites
 Docker & Docker Compose installed
 
@@ -54,7 +54,7 @@ Spin up Vault (via Docker Compose), then run:
 docker exec -it arbox-automation-vault-1 sh
 vault login root
 ```
-# Add Arbox credentials securely
+Add Arbox credentials securely
 ```
 vault kv put secret/arbox email="you@example.com" password="your_password"
 ```
