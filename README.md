@@ -82,8 +82,6 @@ Example request (book a lesson):
 POST http://localhost:5000/book
 
 ```json
-
-Edit
 {
   "lesson_id": "123456"
 }
