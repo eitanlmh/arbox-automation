@@ -1,9 +1,9 @@
 # arbox-automation
 
-🧠 Arbox Automation Platform
+# 🧠 Arbox Automation Platform
 A secure, containerized automation system for interacting with the Arbox platform via a Flask-based API. Designed to perform actions such as login, lesson booking, and synchronization — all while securely handling credentials through Vault.
 
-🚀 Features
+# 🚀 Features
 🔐 Secure secret management via HashiCorp Vault
 
 🌐 Flask API for controlling automation steps (login, book lesson, etc.)
@@ -14,7 +14,7 @@ A secure, containerized automation system for interacting with the Arbox platfor
 
 🧠 Modular and scalable structure for future extensions
 
-🗂️ Project Structure
+# 🗂️ Project Structure
 
 ```
 arbox-automation/
@@ -60,7 +60,7 @@ vault kv put secret/arbox email="you@example.com" password="your_password"
 ```
 You can modify secrets/policy.hcl and apply policies as needed.
 
-4. Build and Run the Project
+# 4. Build and Run the Project
 ```
 docker-compose up --build
 ```
@@ -72,7 +72,7 @@ Vault at http://localhost:8200 (dev mode)
 
 A worker who periodically performs sync tasks
 
-🔌 API Endpoints
+# 🔌 API Endpoints
 Method	Route	Description
 POST	/login	Logs in to Arbox
 POST	/book	Books a lesson by ID
@@ -86,21 +86,21 @@ POST http://localhost:5000/book
   "lesson_id": "123456"
 }
 ```
-🔐 Vault Integration
+# 🔐 Vault Integration
 Uses hvac Python client to access Vault secrets at runtime.
 
 All sensitive tokens and passwords are never hardcoded.
 
 Vault token injected via Docker secret or env var.
 
-🧪 Testing & Extending
+# 🧪 Testing & Extending
 Replace arbox_client.py logic with real Playwright/Selenium as needed.
 
 Add more endpoints to routes.py to support new actions.
 
 Implement task queue (e.g., Celery) for better background job management.
 
-🧰 Technologies Used
+# 🧰 Technologies Used
 Python 3.11
 
 Flask
